@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mozilla+Text:wght@200..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Conversor de Moedas</h1>
+
+    <div class="caixa">
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" placeholder="Informe o valor que será convertido!">
+
+        <label for="moeda-origem">De:</label>
+        <select id="moeda-origem">
+            <option value="" selected disabled hidden>Selecione uma opção</option>
+            <option value="Real">Real (BRL)</option>
+            <option value="Dólar">Dólar (USD)</option>
+            <option value="Euro">Euro (EUR)</option>
+            <option value="Iene">Iene (JP)</option>
+            <option value="Peso">Peso (ARG)</option>
+        </select>
+
+        <label for="moeda-destino">Para:</label>
+        <select id="moeda-destino">
+             <option value="" selected disabled hidden>Selecione uma opção</option>
+            <option value="Real">Real (BRL)</option>
+            <option value="Dólar">Dólar (USD)</option>
+            <option value="Euro">Euro (EUR)</option>
+            <option value="Iene">Iene (JP)</option>
+            <option value="Peso">Peso (ARG)</option>
+        </select>
+
+        <button onclick="converterMoeda()">Converter</button>
+        <button onclick="limpar()">Limpar</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
