@@ -1,11 +1,13 @@
-const valorInput = document.getElementById("valor");
+
+function converterMoeda() {
+
+  const valorInput = document.getElementById("valor");
 const moedaOrigem = document.getElementById("moeda-origem").value;
 const moedaDestino = document.getElementById("moeda-destino").value;
 const resultadoParagrafo = document.getElementById("resultado");
 
 const valor = parseFloat(valorInput.value);
 
-function converterMoeda() {
   if (isNaN(valor) || valor === 0) {
     resultadoParagrafo.textContent = "Insira um valor válido!";
     resultadoParagrafo.style.color = "red";
